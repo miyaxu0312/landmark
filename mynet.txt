@@ -1,0 +1,114 @@
+Conv_weights,data,Conv_weights,16,4,0,1
+Conv_BatchNorm, Conv_weights
+resBlock_0_shortcut_weights,True,Conv_weights,resBlock_0_shortcut_weights,32,1,0,2
+resBlock_0_Conv_weights,Conv_weights,resBlock_0_Conv_weights,16,1,0,1
+resBlock_0_Conv_BatchNorm, resBlock_0_Conv_weights
+resBlock_0_Conv_1, resBlock_0_Conv_BatchNorm, resBlock_0_Conv_1,16,4,1,2
+resBlock_0_Conv_1_BatchNorm, resBlock_0_Conv_1
+resBlock_0_Conv_2, resBlock_0_Conv_1_BatchNorm, resBlock_0_Conv_2,32,1,0,1
+resBlock_0_eltwise, resBlock_0_shortcut_weights, resBlock_0_Conv_2, resBlock_0_eltwise
+resBlock_0_BatchNorm, resBlock_0_eltwise
+resBlock_1_Conv_weights,false,resBlock_0_BatchNorm,resBlock_1_Conv_weights,16,1,0,1
+resBlock_1_Conv_BatchNorm, resBlock_1_Conv_weights
+resBlock_1_Conv_1, resBlock_1_Conv_BatchNorm, resBlock_1_Conv_1,16,4,1,1
+resBlock_1_Conv_1_BatchNorm, resBlock_1_Conv_1
+resBlock_1_Conv_2, resBlock_1_Conv_1_BatchNorm, resBlock_1_Conv_2,32,1,0,1
+resBlock_1_eltwise, resBlock_1_Conv_2, resBlock_0_BatchNorm, resBlock_1_eltwise
+resBlock_1_BatchNorm, resBlock_1_eltwise
+resBlock_2_shortcut_weights,True,resBlock_1_BatchNorm,resBlock_2_shortcut_weights,64,1,0,2
+resBlock_2_Conv_weights, resBlock_1_BatchNorm,resBlock_2_Conv_weights,32,1,0,1
+resBlock_2_Conv_BatchNorm, resBlock_2_Conv_weights
+resBlock_2_Conv_1, resBlock_2_Conv_BatchNorm,resBlock_2_Conv_1,32,4,1,2
+resBlock_2_Conv_1_BatchNorm, resBlock_2_Conv_1
+resBlock_2_Conv_2, resBlock_2_Conv_1_BatchNorm,resBlock_2_Conv_2,64,1,0,1
+resBlock_2_eltwise, resBlock_2_shortcut_weights, resBlock_2_Conv_2, resBlock_2_eltwise
+resBlock_2_BatchNorm, resBlock_2_eltwise
+resBlock_3_Conv_weights,false, resBlock_2_BatchNorm, resBlock_3_Conv_weights,32,1,0,1
+resBlock_3_Conv_BatchNorm, resBlock_3_Conv_weights
+resBlock_3_Conv_1, resBlock_3_Conv_BatchNorm, resBlock_3_Conv_1,32,4,1,1
+resBlock_3_Conv_1_BatchNorm, resBlock_3_Conv_1
+resBlock_3_Conv_2, resBlock_3_Conv_1_BatchNorm, resBlock_3_Conv_2,64,1,0,1
+resBlock_3_eltwise, resBlock_2_BatchNorm, resBlock_3_Conv_2, resBlock_3_eltwise
+resBlock_3_BatchNorm, resBlock_3_eltwise
+resBlock_4_shortcut_weights,True, resBlock_3_BatchNorm, resBlock_4_shortcut_weights,128,1,0,2
+resBlock_4_Conv_weights, resBlock_3_BatchNorm, resBlock_4_Conv_weights,64,1,0,1
+resBlock_4_Conv_BatchNorm, resBlock_4_Conv_weights
+resBlock_4_Conv_1, resBlock_4_Conv_BatchNorm, resBlock_4_Conv_1,64,4,1,2
+resBlock_4_Conv_1_BatchNorm, resBlock_4_Conv_1
+resBlock_4_Conv_2, resBlock_4_Conv_1_BatchNorm, resBlock_4_Conv_2,128,1,0,1
+resBlock_4_eltwise, resBlock_4_shortcut_weights, resBlock_4_Conv_2, resBlock_4_eltwise
+resBlock_4_BatchNorm, resBlock_4_eltwise
+resBlock_5_Conv_weights,false, resBlock_4_BatchNorm, resBlock_5_Conv_weights,64,1,0,1
+resBlock_5_Conv_BatchNorm, resBlock_5_Conv_weights
+resBlock_5_Conv_1, resBlock_5_Conv_BatchNorm, resBlock_5_Conv_1,64,4,1,1
+resBlock_5_Conv_1_BatchNorm, resBlock_5_Conv_1
+resBlock_5_Conv_2, resBlock_5_Conv_1_BatchNorm, resBlock_5_Conv_2,128,1,0,1
+resBlock_5_eltwise, resBlock_4_BatchNorm, resBlock_5_Conv_2, resBlock_5_eltwise
+resBlock_5_BatchNorm, resBlock_5_eltwise
+resBlock_6_shortcut_weights,True, resBlock_5_BatchNorm, resBlock_6_shortcut_weights,256,1,0,2
+resBlock_6_Conv_weights, resBlock_5_BatchNorm, resBlock_6_Conv_weights,128,1,0,1
+resBlock_6_Conv_BatchNorm, resBlock_6_Conv_weights
+resBlock_6_Conv_1, resBlock_6_Conv_BatchNorm, resBlock_6_Conv_1,128,4,1,2
+resBlock_6_Conv_1_BatchNorm, resBlock_6_Conv_1
+resBlock_6_Conv_2, resBlock_6_Conv_1_BatchNorm, resBlock_6_Conv_2,256,1,0,1
+resBlock_6_eltwise, resBlock_6_shortcut_weights, resBlock_6_Conv_2, resBlock_6_eltwise
+resBlock_6_BatchNorm, resBlock_6_eltwise
+resBlock_7_Conv_weights,false, resBlock_6_BatchNorm, resBlock_7_Conv_weights,128,1,0,1
+resBlock_7_Conv_BatchNorm, resBlock_7_Conv_weights
+resBlock_7_Conv_1, resBlock_7_Conv_BatchNorm, resBlock_7_Conv_1,128,4,1,1
+resBlock_7_Conv_1_BatchNorm, resBlock_7_Conv_1
+resBlock_7_Conv_2, resBlock_7_Conv_1_BatchNorm, resBlock_7_Conv_2,256,1,0,1
+resBlock_7_eltwise, resBlock_6_BatchNorm, resBlock_7_Conv_2, resBlock_7_eltwise
+resBlock_7_BatchNorm, resBlock_7_eltwise
+resBlock_8_shortcut_weights,True, resBlock_7_BatchNorm, resBlock_8_shortcut_weights,512,1,0,2
+resBlock_8_Conv_weights, resBlock_7_BatchNorm, resBlock_8_Conv_weights,256,1,0,1
+resBlock_8_Conv_BatchNorm, resBlock_8_Conv_weights
+resBlock_8_Conv_1, resBlock_8_Conv_BatchNorm, resBlock_8_Conv_1,256,4,1,2
+resBlock_8_Conv_1_BatchNorm, resBlock_8_Conv_1
+resBlock_8_Conv_2, resBlock_8_Conv_1_BatchNorm, resBlock_8_Conv_2,512,1,0,1
+resBlock_8_eltwise, resBlock_8_shortcut_weights, resBlock_8_Conv_2, resBlock_8_eltwise
+resBlock_8_BatchNorm, resBlock_8_eltwise
+resBlock_9_Conv_weights,false, resBlock_8_BatchNorm, resBlock_9_Conv_weights,256,1,0,1
+resBlock_9_Conv_BatchNorm, resBlock_9_Conv_weights
+resBlock_9_Conv_1, resBlock_9_Conv_BatchNorm, resBlock_9_Conv_1,256,4,1,1
+resBlock_9_Conv_1_BatchNorm, resBlock_9_Conv_1
+resBlock_9_Conv_2, resBlock_9_Conv_1_BatchNorm, resBlock_9_Conv_2,512,1,0,1
+resBlock_9_eltwise, resBlock_8_BatchNorm, resBlock_9_Conv_2, resBlock_9_eltwise
+resBlock_9_BatchNorm, resBlock_9_eltwise
+Conv2d_transpose_1_weights, resBlock_9_BatchNorm, Conv2d_transpose_1_weights,512,4,1,1
+Conv2d_transpose_1_BatchNorm, Conv2d_transpose_1_weights
+Conv2d_transpose_2_weights, Conv2d_transpose_1_BatchNorm, Conv2d_transpose_2_weights,256,4,1,2
+Conv2d_transpose_2_BatchNorm, Conv2d_transpose_2_weights
+Conv2d_transpose_3_weights, Conv2d_transpose_2_BatchNorm, Conv2d_transpose_3_weights,256,4,1,1
+Conv2d_transpose_3_BatchNorm, Conv2d_transpose_3_weights
+Conv2d_transpose_4_weights, Conv2d_transpose_3_BatchNorm, Conv2d_transpose_4_weights,256,4,1,1
+Conv2d_transpose_4_BatchNorm, Conv2d_transpose_4_weights
+Conv2d_transpose_5_weights, Conv2d_transpose_4_BatchNorm, Conv2d_transpose_5_weights,128,4,1,2
+Conv2d_transpose_5_BatchNorm, Conv2d_transpose_5_weights
+Conv2d_transpose_6_weights, Conv2d_transpose_5_BatchNorm, Conv2d_transpose_6_weights,128,4,1,1
+Conv2d_transpose_6_BatchNorm, Conv2d_transpose_6_weights
+Conv2d_transpose_7_weights, Conv2d_transpose_6_BatchNorm, Conv2d_transpose_7_weights,128,4,1,1
+Conv2d_transpose_7_BatchNorm, Conv2d_transpose_7_weights
+Conv2d_transpose_8_weights, Conv2d_transpose_7_BatchNorm, Conv2d_transpose_8_weights,64,4,1,2
+Conv2d_transpose_8_BatchNorm, Conv2d_transpose_8_weights
+Conv2d_transpose_9_weights, Conv2d_transpose_8_BatchNorm, Conv2d_transpose_9_weights,64,4,1,1
+Conv2d_transpose_9_BatchNorm, Conv2d_transpose_9_weights
+Conv2d_transpose_10_weights, Conv2d_transpose_9_BatchNorm, Conv2d_transpose_10_weights,64,4,1,1
+Conv2d_transpose_10_BatchNorm, Conv2d_transpose_10_weights
+Conv2d_transpose_11_weights, Conv2d_transpose_10_BatchNorm, Conv2d_transpose_11_weights,32,4,1,2
+Conv2d_transpose_11_BatchNorm, Conv2d_transpose_11_weights
+Conv2d_transpose_12_weights, Conv2d_transpose_11_BatchNorm, Conv2d_transpose_12_weights,32,4,1,1
+Conv2d_transpose_12_BatchNorm, Conv2d_transpose_12_weights
+Conv2d_transpose_13_weights, Conv2d_transpose_12_BatchNorm, Conv2d_transpose_13_weights,16,4,1,2
+Conv2d_transpose_13_BatchNorm, Conv2d_transpose_13_weights
+Conv2d_transpose_14_weights, Conv2d_transpose_13_BatchNorm, Conv2d_transpose_14_weights,16,4,1,1
+Conv2d_transpose_14_BatchNorm, Conv2d_transpose_14_weights
+Conv2d_transpose_15_weights, Conv2d_transpose_14_BatchNorm, Conv2d_transpose_15_weights,3,4,1,1
+Conv2d_transpose_15_BatchNorm, Conv2d_transpose_15_weights
+Conv2d_transpose_16_weights, Conv2d_transpose_15_BatchNorm, Conv2d_transpose_16_weights,3,4,1,1
+Conv2d_transpose_16_BatchNorm, Conv2d_transpose_16_weights
+Conv2d_transpose_17_weights, Conv2d_transpose_16_BatchNorm, Conv2d_transpose_17_weights,3,4,1,1
+Conv2d_transpose_17_BatchNorm, Conv2d_transpose_17_weights
+
+
+

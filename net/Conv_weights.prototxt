@@ -1,0 +1,12 @@
+layer {
+        name: "Conv_weights"
+        bottom: "data"
+        top: "Conv_weights"
+        type: "Convolution"
+        convolution_param {
+        num_output: 16
+        kernel_size: 4
+        pad: 0
+        stride: 1
+        }
+        

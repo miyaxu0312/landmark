@@ -1,0 +1,12 @@
+layer {
+        name: "resBlock_0_shortcut_weights"
+        bottom: "Conv_weights"
+        top: "resBlock_0_shortcut_weights"
+        type: "Convolution"
+        convolution_param {
+        num_output: 32
+        kernel_size: 1
+        pad: 0
+        stride: 2
+        }
+        

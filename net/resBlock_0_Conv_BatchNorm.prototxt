@@ -1,0 +1,15 @@
+layer {
+        name: "resBlock_0_Conv_BatchNorm"
+        bottom: "resBlock_0_Conv_weights"
+        top: "resBlock_0_Conv_weights"
+        type: "BatchNorm"
+        }
+        layer {
+        name: "resBlock_0_Conv_BatchNorm"
+        bottom: "resBlock_0_Conv_weights"
+        top: "resBlock_0_Conv_weights"
+        type: "Scale"
+        scale_param {
+        bias_term: true
+        }
+        

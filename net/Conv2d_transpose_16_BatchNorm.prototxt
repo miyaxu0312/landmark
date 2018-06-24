@@ -1,0 +1,15 @@
+layer {
+        name: "Conv2d_transpose_16_BatchNorm"
+        bottom: "Conv2d_transpose_16_weights"
+        top: "Conv2d_transpose_16_weights"
+        type: "BatchNorm"
+        }
+        layer {
+        name: "Conv2d_transpose_16_BatchNorm"
+        bottom: "Conv2d_transpose_16_weights"
+        top: "Conv2d_transpose_16_weights"
+        type: "Scale"
+        scale_param {
+        bias_term: true
+        }
+        

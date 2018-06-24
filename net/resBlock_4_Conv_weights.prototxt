@@ -1,0 +1,12 @@
+layer {
+        name: "resBlock_4_Conv_weights"
+        bottom: "resBlock_3_BatchNorm"
+        top: "resBlock_4_Conv_weights"
+        type: "Convolution"
+        convolution_param {
+        num_output: 64
+        kernel_size: 1
+        pad: 0
+        stride: 1
+        }
+        

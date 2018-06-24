@@ -1,0 +1,15 @@
+layer {
+        name: "resBlock_8_BatchNorm"
+        bottom: "resBlock_8_eltwise"
+        top: "resBlock_8_eltwise"
+        type: "BatchNorm"
+        }
+        layer {
+        name: "resBlock_8_BatchNorm"
+        bottom: "resBlock_8_eltwise"
+        top: "resBlock_8_eltwise"
+        type: "Scale"
+        scale_param {
+        bias_term: true
+        }
+        

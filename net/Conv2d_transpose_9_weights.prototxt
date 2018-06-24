@@ -1,0 +1,12 @@
+layer {
+        name: "Conv2d_transpose_9_weights"
+        bottom: "Conv2d_transpose_8_BatchNorm"
+        top: "Conv2d_transpose_9_weights"
+        type: "Convolution"
+        convolution_param {
+        num_output: 64
+        kernel_size: 4
+        pad: 1
+        stride: 1
+        }
+        

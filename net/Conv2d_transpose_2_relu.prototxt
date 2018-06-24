@@ -1,0 +1,6 @@
+layer {
+        name: "Conv2d_transpose_2_relu"
+        bottom: "Conv2d_transpose_2_BatchNorm"
+        top: "Conv2d_transpose_2_BatchNorm"
+        type: "ReLU"
+        }

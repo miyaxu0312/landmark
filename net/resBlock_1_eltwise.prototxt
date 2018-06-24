@@ -1,0 +1,8 @@
+
+        layer {
+        name: "resBlock_1_eltwise"
+        bottom: "resBlock_1_Conv_2"
+        bottom: "resBlock_0_BatchNorm"
+        top: "resBlock_1_eltwise"
+        type: "Eltwise"
+        }

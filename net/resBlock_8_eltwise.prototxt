@@ -1,0 +1,8 @@
+
+        layer {
+        name: "resBlock_8_eltwise"
+        bottom: "resBlock_8_shortcut_weights"
+        bottom: "resBlock_8_Conv_2"
+        top: "resBlock_8_eltwise"
+        type: "Eltwise"
+        }

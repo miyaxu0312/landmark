@@ -1,0 +1,15 @@
+layer {
+        name: "Conv_BatchNorm"
+        bottom: "Conv_weights"
+        top: "Conv_weights"
+        type: "BatchNorm"
+        }
+        layer {
+        name: "Conv_BatchNorm"
+        bottom: "Conv_weights"
+        top: "Conv_weights"
+        type: "Scale"
+        scale_param {
+        bias_term: true
+        }
+        

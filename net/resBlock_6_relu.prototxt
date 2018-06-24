@@ -1,0 +1,6 @@
+layer {
+        name: "resBlock_6_relu"
+        bottom: "resBlock_6_BatchNorm"
+        top: "resBlock_6_BatchNorm"
+        type: "ReLU"
+        }

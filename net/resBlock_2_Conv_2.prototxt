@@ -1,0 +1,12 @@
+layer {
+        name: "resBlock_2_Conv_2"
+        bottom: "resBlock_2_Conv_1_BatchNorm"
+        top: "resBlock_2_Conv_2"
+        type: "Convolution"
+        convolution_param {
+        num_output: 64
+        kernel_size: 1
+        pad: 0
+        stride: 1
+        }
+        

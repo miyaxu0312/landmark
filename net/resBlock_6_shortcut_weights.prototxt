@@ -1,0 +1,12 @@
+layer {
+        name: "resBlock_6_shortcut_weights"
+        bottom: "resBlock_5_BatchNorm"
+        top: "resBlock_6_shortcut_weights"
+        type: "Convolution"
+        convolution_param {
+        num_output: 256
+        kernel_size: 1
+        pad: 0
+        stride: 2
+        }
+        

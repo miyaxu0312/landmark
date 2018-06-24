@@ -1,0 +1,6 @@
+layer {
+        name: "Conv_relu"
+        bottom: "Conv_BatchNorm"
+        top: "Conv_BatchNorm"
+        type: "ReLU"
+        }
